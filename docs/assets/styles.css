@@ -95,6 +95,10 @@ button, input, select { font: inherit; color: inherit; }
 /* Hero */
 .hero { position: relative; overflow: hidden; background: var(--primary-deep); }
 .hero-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.3; }
+/* One-column layouts: keep the photo behind the headline only, framed on the couple, fading out above the form. */
+@media (max-width: 1023px) {
+  .hero-img { inset: 0 0 auto 0; height: 40rem; object-position: 20% top; -webkit-mask-image: linear-gradient(#000 70%, transparent); mask-image: linear-gradient(#000 70%, transparent); }
+}
 .hero-grid { position: relative; display: grid; gap: 2.5rem; padding-top: 3rem; padding-bottom: 3rem; }
 .hero-copy { color: var(--primary-foreground); }
 .hero-copy .eyebrow { color: var(--highlight); }

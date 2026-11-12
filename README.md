@@ -46,8 +46,9 @@ If a signup came in before the FUB key was added, run the `retryFub` function in
 
 ## Before going live
 
-- Add the hero photo as `docs/assets/tampa-home.jpg`. Without it the hero shows a plain dark blue background.
-- Set `GUIDE_URL_EN`. Without it the thank-you page says the guide is on its way but no email is sent.
+- The hero photo is `docs/assets/tampa-home.jpg`. To change it, replace that file.
+- `GUIDE_URL_EN` and `GUIDE_URL_ES` must be set. Without a link the thank-you page says the guide is on its way but no email is sent.
+- Set `FUB_API_KEY`, then run `retryFub` so earlier rows are sent.
 - Logo and brand colors are in. Colors are at the top of `docs/assets/styles.css` if they need adjusting.
 - Have compliance review the consent line under the form and the guide email text in `Code.gs`.
 - Send one English and one Spanish test signup and check the Sheet, both emails, and FUB.
