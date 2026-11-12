@@ -153,6 +153,7 @@ function sendToFub_(lead) {
     emails: [{ value: lead.email }],
     phones: [{ value: lead.phone }],
     tags: [LEAD_SOURCE],
+    source: LEAD_SOURCE,
   };
   const res = UrlFetchApp.fetch('https://api.followupboss.com/v1/events', {
     method: 'post',
